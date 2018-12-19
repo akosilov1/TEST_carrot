@@ -56,23 +56,19 @@ if (!function_exists("PrintPropsForm"))
 	{
 		if (!empty($arSource))
 		{
-			?>
-				<?
+
 				$index = 0;
 				foreach ($arSource as $key => $arProperties)
 				{
 					?>
-					<? if ($index == 0): ?>
-						<div class="left">
-
-						<div class="title">Личные данные</div>
-					<?php elseif ($index == 3): ?>
-						</div>
-
+					<?/* if ($index == 0): ?>
 						<div class="right">
+						    <div class="title">Личные данные</div>
+                    <?php elseif ($index == 3): ?>
+						</div>
+						<div class="left">
 							<div class="title">Адрес доставки</div>
-					<?php endif; ?>
-
+					<?php endif; */?>
 					<div class="line" data-property-id-row="<?=intval(intval($arProperties["ID"]))?>">
 						<div class="name left">
 							<?=$arProperties["NAME"]?>
@@ -334,7 +330,7 @@ if (!function_exists("PrintPropsForm"))
 					$index++;
 				}
 				?>
-			</div>
+			<?//</div>?>
 			<?
 		}
 	}

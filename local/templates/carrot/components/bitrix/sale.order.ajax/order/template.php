@@ -335,7 +335,6 @@ if (!function_exists("cmpBySort"))
 <?
 if($USER->IsAuthorized()){
 	$u_id = $USER->GetID();
-	//print_r($USER->GetUserGroupArray($u_id));
 	if(in_array(5,$USER->GetUserGroupArray($u_id))){?>
 		<script>
 			var orderButton = $(".order_submit .submit_btn").html();

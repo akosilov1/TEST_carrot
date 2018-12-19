@@ -23,10 +23,25 @@ include($_SERVER["DOCUMENT_ROOT"].$templateFolder."/props_format.php");
 
 	<input type="hidden" name="showProps" id="showProps" value="<?=($_POST["showProps"] == 'Y' ? 'Y' : 'N')?>" />
 </h4>
-
+<!-- <?//print_r($arResult["ORDER_PROP"])?> -->
 <?
-PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_N"], $arParams["TEMPLATE_LOCATION"]);
-PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_Y"], $arParams["TEMPLATE_LOCATION"]);
+$ar_props = array();
+foreach ($arResult["ORDER_PROP"]["USER_PROPS_N"] as $ppp){
+    $ar_props[$ppp['GROUP_NAME']][] = $ppp;
+}
+foreach ($arResult["ORDER_PROP"]["USER_PROPS_Y"] as $ppp){
+    $ar_props[$ppp['GROUP_NAME']][] = $ppp;
+}
+$i = 1;
+foreach ($ar_props as $gr_k => $gr){?>
+    <div class="<?=($i == 1)?"left":"right";?>">
+    <p class="title"><?=$gr_k;?></p>
+    <? PrintPropsForm($gr, $arParams["TEMPLATE_LOCATION"]);?>
+    </div>
+<? $i++;
+}
+/*PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_N"], $arParams["TEMPLATE_LOCATION"]);
+PrintPropsForm($arResult["ORDER_PROP"]["USER_PROPS_Y"], $arParams["TEMPLATE_LOCATION"]);*/
 ?>
 
 <div class="clear"></div>
