@@ -1,0 +1,120 @@
+.price {
+    position: relative;
+}
+
+.old-price {
+    position: absolute;
+    text-decoration: line-through;
+    font-weight: bold;
+    color: gray;
+    line-height: 1;
+}
+
+.product_info .old-price {
+    font-size: 17px;
+    top: -10px;
+}
+
+.carousel .old-price,
+.products.list .old-price {
+    font-size: 12px;
+    top: 7px;
+}
+
+/* Отображение шрифтов - дополнение */
+
+.zagolovok {
+   color: #666;
+   font: 38px/46px Engine;
+   text-align: center;
+}
+
+.zagolovok h3 {
+   color: #666;
+   font: 38px/46px Engine;
+   text-align: center;
+}
+
+/* Стили отображения картинок */
+
+.kartinka_sprava {
+float: right;
+margin-left: 8px;
+margin-right: 25px;
+margin-top: 5px;
+margin-bottom: 5px;
+align: right;
+}
+
+.kartinka_sleva {
+float: left;
+margin-left: 5px;
+margin-right: 8px;
+margin-top: 5px;
+margin-bottom: 5px;
+align: left;
+}
+
+/* Стили для отображения виджитов */
+.all {
+  /*  width: 846px; */
+	margin-top: 5px;
+	margin-bottom: 15px;
+	margin-left: auto;
+    margin-right: auto;
+}
+
+.raw {
+    width: 222px;
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+}
+
+.center {
+    text-align: center;
+}
+
+.padded {
+    padding: 1.5rem;
+}
+/* --------------------------- */
+
+/* ------ Очистка и выравнивание ------- */
+.clear {
+	clear: both;
+}
+
+.clear_left {
+	clear: left;
+	
+}
+.clear_right {
+	clear: right;
+}
+
+.inline {
+	display: inline;
+	widows: 0px;
+}
+/* --------------------------- */
+.bx-pagination a.active{
+  background: #1f70d6;
+  padding: 2px 5px;
+  color: #fff;
+}
+.bx-pagination a{
+  font-size: 14px; 
+  padding: 2px 5px;
+}
+.bx-forgotpass-table{
+    width: 100%;
+}
+.bx-forgotpass-table td{
+    vertical-align: middle;
+}
+.personal_wrapper input[type='submit'].carrot-btn{
+    background: #eb5f09;
+    color: #fff;
+    font-family: Arial, sans-serif;
+}

@@ -1,0 +1,66 @@
+.bx_profile .main-profile-block-date-info{
+	margin-bottom: 15px;
+}
+
+.bx_profile .main-profile-form-password-annotation{
+	font-family: Arial, Helvetica,sans-serif;
+	color: grey;
+	font-weight: lighter;
+	font-size: 12px;
+	margin-top: 15px;
+	margin-bottom: 0;
+}
+
+.bx_profile .main-profile-block-date-info, .bx_profile .form-group{
+	overflow-y: hidden;
+}
+/**/
+.bx_profile {
+	color: #666;
+    font: 14px/35px Roboto;
+}
+.bx_profile .form-control{
+	border: 1px solid #ebbfa5;
+	font: 14px/35px Roboto;
+}
+.bx_profile .btn{
+	display: inline-block;
+    height: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    border: 1px dashed #fff;
+    background: #ff9900;
+    padding: 0 45px;
+    color: #fff;
+    font: 30px Engine;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+@media (min-width: 992px)
+{
+	.text-md-right{
+		text-align: right;
+	}
+
+	.form-group{
+		display: table;
+		width: 100%;
+	}
+
+	.main-profile-form-label.text-md-right, input[class*="col-"] {
+		float: none !important;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+
+.bx_profile .main-profile-social-block{
+	margin-top: 40px;
+}
+
+.bx_profile .form-group .form-control{
+	height: 40px;
+}
+
+
+

@@ -1,0 +1,54 @@
+.cart_info table td.info {
+	max-width: 490px;
+}
+.delivery_exp {
+	margin-top: 20px;
+}
+
+.checkout .bx-ui-sls-input-block.dropdown-block {
+	border-radius: 3px;
+	background: #fff;
+	border: 1px solid #ebbfa5;
+	padding: 0 12px 0 30px;
+	height: 35px;
+	width: 385px;
+	color: #666;
+	font: 14px Roboto;
+}
+
+.checkout .delivery_exp {
+	padding: 0 !important;
+}
+
+.checkout .delivery_exp label {
+	width: 100%;
+	padding: 30px 30px 30px 60px;
+}
+
+.checkout .delivery_exp label:before {
+	top: 30px;
+	left: 30px;
+}
+
+.checkout .line.order_description {
+	margin-bottom: 30px;
+}
+.checkout .order_description textarea {
+	width: 100%;
+	height: 60px;
+}
+
+div.notetext {
+	background-color: #FFFEEB;
+	border-color: #FFD482;
+	padding: 0.4em 1.117em;
+}
+.summ-error{
+    text-align: center;
+    color: #fff;
+    padding: 30px;
+    background: rgba(255, 143, 39, 0.66);
+    width: 100%;
+    font-size: 32px;
+    font-family: Open sans;
+}

@@ -1,0 +1,73 @@
+/* clearfix */
+.owl-carousel .owl-wrapper:after {
+	content: ".";
+	display: block;
+	clear: both;
+	visibility: hidden;
+	line-height: 0;
+	height: 0;
+}
+/* display none until init */
+.owl-carousel{
+	display: none;
+	position: relative;
+	width: 100%;
+	-ms-touch-action: pan-y;
+}
+.owl-carousel .owl-wrapper{
+	display: none;
+	position: relative;
+	-webkit-transform: translate3d(0px, 0px, 0px);
+}
+.owl-carousel .owl-wrapper-outer{
+	overflow: hidden;
+	position: relative;
+	width: 100%;
+}
+.owl-carousel .owl-wrapper-outer.autoHeight{
+	-webkit-transition: height 500ms ease-in-out;
+	-moz-transition: height 500ms ease-in-out;
+	-ms-transition: height 500ms ease-in-out;
+	-o-transition: height 500ms ease-in-out;
+	transition: height 500ms ease-in-out;
+}
+	
+.owl-carousel .owl-item{
+	float: left;
+}
+.owl-controls .owl-page,
+.owl-controls .owl-buttons div{
+	cursor: pointer;
+}
+.owl-controls {
+	-webkit-user-select: none;
+	-khtml-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	-webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+}
+
+
+.owl-buttons div{
+	position: absolute;
+	top: -75px;
+	outline: 0;
+	width: 406px;
+	height: 27px;
+	text-indent: -9999px;
+	z-index: 99;
+	background: url(../images/carousel_arrows.png) 0 0  no-repeat;
+}
+.owl-buttons div.owl-prev{
+	left: 50%;
+	margin-left: -600px;
+	background-position: 0 0;
+}
+.owl-buttons div.owl-next{
+	right: 50%;
+	margin-right: -600px;
+	background-position: -406px 0;
+}
+.owl-buttons div.owl-prev:hover{ background-position: 0 -27px; }
+.owl-buttons div.owl-next:hover{ background-position: -406px -27px; }

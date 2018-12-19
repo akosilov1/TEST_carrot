@@ -1,0 +1,16 @@
+div.bx-auth-reg input.bx-auth-input {vertical-align:middle;}
+div.bx-auth-reg span.bx-auth-secure {background-color:#FFFAE3; border:1px solid #DEDBC8; padding:2px; display:inline-block; vertical-align:middle;}
+div.bx-auth-reg div.bx-auth-secure-icon {background-image:url(images/sec.png); background-repeat:no-repeat; background-position:center; width:19px; height:18px;}
+div.bx-auth-reg div.bx-auth-secure-unlock {background-image:url(images/sec-unlocked.png);}
+#yur-register{
+	font-size: 14px;
+}
+#yur-register input{
+	padding: 5px 7px;
+	margin-bottom: 5px;
+}
+#yur-register thead td{
+	padding-bottom: 30px;
+	font-size: 24px;
+	text-align: center;
+}
